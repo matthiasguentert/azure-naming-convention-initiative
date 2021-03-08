@@ -9,11 +9,11 @@ terraform {
 
 # https://registry.terraform.io/providers/providers/hashicorp/azurerm/latest/docs/resources/policy_definition
 resource "azurerm_policy_definition" "policy" {
-    name = var.name
+    name = "policy-NamingConventionFor${trimspace(var.display_name)}"
     policy_type = "Custom"
     mode = "All"
-    display_name = var.display_name
-    description = var.description
+    display_name = "Naming convention for ${var.display_name}"
+    description = "Naming convention for ${var.display_name}"
 
     metadata = jsonencode({
         "version": "0.1.0",
