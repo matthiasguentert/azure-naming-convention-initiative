@@ -1,4 +1,4 @@
-# 👮 Azure Naming Convention Initiative 
+# 👮 Azure Naming Convention Initiative 🚨
 
 This repository holds a bunch of Terraform modules that creates an initiatve holding Azure polices to audit or enfore a specific naming convention. However it doesn't assign anything. 
 
@@ -6,7 +6,7 @@ The preset follows Microsoft naming convention which was proposed [here](https:/
 
 However you can modify them according to your needs. The underyling module uses a `notLike` condition so you can check for pre- and postfixes, e.g. `app-*` would match `app-some-web-application` whereas `*-app` would match `some-web-application-app`. 
 
-# 🎯 How to use 
+## 🎯 How to use 
 
 * Download terraform binary from [here](https://www.terraform.io/downloads.html)
 * Clone this repository (`git clone https://github.com/matthiasguentert/azure-naming-convention-initiative.git`)
@@ -18,19 +18,19 @@ However you can modify them according to your needs. The underyling module uses 
 * Run `terraform apply -parallelism=20 -auto-approve tfplan`
 * Assign initiative according to your needs (e.g. via Azure Portal) 
 
-# ☝ Important notes
+## ☝ Important notes
 
 - After assigning an initiative it takes up to 30min until it becomes active!
 - You need to have the `Resource Policy Contributor` role assigned on the target subscription
 - Currently grouping of policies within the initiative is not possible due to a terraform [bug](https://github.com/terraform-providers/terraform-provider-azurerm/issues/10155)
 
-# 💡 Ideas for the future
+## 💡 Ideas for the future
 
 - Create native ARM template version and integrate with Github actions
 - Create a bicep version 
 - Create a .NET version using Azure SDK 
 
-# 🤓 Further reading 
+## 🤓 Further reading 
 
 - [Azure Policy as Code workflow](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-as-code)
 - [azurerm_policy_definition](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition)
@@ -38,9 +38,9 @@ However you can modify them according to your needs. The underyling module uses 
 - [Resource providers for Azure services](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers)
 - [Azure Templates](https://docs.microsoft.com/en-us/azure/templates/)
 
-# 🚀 Currently implemented resources
+## 🚀 Currently implemented resources
 
-## General 
+### General 
 
 |Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -50,7 +50,7 @@ However you can modify them according to your needs. The underyling module uses 
 | API management service instance | `apim-` |✅||
 | Managed Identity | `id-` |✅||
 
-## Networking 
+### Networking 
 
 |Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -76,7 +76,7 @@ However you can modify them according to your needs. The underyling module uses 
 | CDN endpoint | `cdne-` |✅||
 | Web Application Firewall (WAF) policy | `waf` |✅||
 
-## Compute and Web 
+### Compute and Web 
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -101,7 +101,7 @@ Asset type | Abbreviation | Status | Comment
 | Notification Hubs | `ntf-` |✅||
 | Notification Hubs namespace | `ntfns-` |✅||
 
-## Databases 
+### Databases 
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -116,7 +116,7 @@ Asset type | Abbreviation | Status | Comment
 | SQL Server Stretch Database | `sqlstrdb-` |🟨|not implemented yet|
 | SQL Managed Instance | `sqlmi-` |🟨|not implemented yet|
 
-## Storage 
+### Storage 
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -124,7 +124,7 @@ Asset type | Abbreviation | Status | Comment
 | Azure StorSimple | `ssimp` |🟨|not implemented yet|
 | Azure Container Registry | `acr` |✅||
 
-## AI and Machine Learning
+### AI and Machine Learning
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -132,7 +132,7 @@ Asset type | Abbreviation | Status | Comment
 | Azure Cognitive Services | `cog-` |🟨|not implemented yet|
 | Azure Machine Learning workspace | `mlw-` |🟨|not implemented yet|
 
-## Analytics and IoT
+### Analytics and IoT
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -157,14 +157,14 @@ Asset type | Abbreviation | Status | Comment
 | Power BI Embedded | `pbi-` |🟨|not implemented yet|
 | Time Series Insights environment | `tsi-` |🟨|not implemented yet|
 
-## Developer tools
+### Developer tools
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
 | App Configuration store | `appcs-` |🟨|not implemented yet|
 | Azure Static Web Apps | `stap-` |🟨|not implemented yet|
 
-## Integration
+### Integration
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -174,7 +174,7 @@ Asset type | Abbreviation | Status | Comment
 | Service Bus queue | `sbq-` |🟨|not implemented yet|
 | Service Bus topic | `sbt-` |🟨|not implemented yet|
 
-## Management and governance
+### Management and governance
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
@@ -187,11 +187,10 @@ Asset type | Abbreviation | Status | Comment
 | Log Analytics workspace | `log-` |✅||
 | Application Insights | `appi-` |✅||
 
-## Migration
+### Migration
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
 | Azure Migrate project | `migr-` |🟨|not implemented yet|
 | Database Migration Service instance | `dms-` |🟨|not implemented yet|
 | Recovery Services vault | `rsv-` |🟨|not implemented yet|
-
