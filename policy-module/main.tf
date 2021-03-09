@@ -9,7 +9,7 @@ terraform {
 
 # https://registry.terraform.io/providers/providers/hashicorp/azurerm/latest/docs/resources/policy_definition
 resource "azurerm_policy_definition" "policy" {
-    name = "policy-NamingConventionFor${trim(var.display_name, " ")}"
+    name = "policy-namingconvention-${replace(var.display_name, " ", "-")}"
     policy_type = "Custom"
     mode = "All"
     display_name = "Naming convention for ${var.display_name}"
