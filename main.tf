@@ -20,6 +20,7 @@ resource "azurerm_policy_set_definition" "initiative" {
     description = "Naming convention initiative following Microsoft's recommendation"
 
     # General 
+
     policy_definition_reference {
       policy_definition_id = module.management-group-policy.id
     }
@@ -41,18 +42,164 @@ resource "azurerm_policy_set_definition" "initiative" {
     }
 
     # Networking 
-    # policy_definition_reference {
-    #   policy_definition_id = module.virtual-network-policy.id
-    # }    
+
+    policy_definition_reference {
+      policy_definition_id = module.virtual-network-policy.id
+    }    
+
+    policy_definition_reference {
+      policy_definition_id = module.subnet-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.virtual-network-peering-policy.id
+    }    
+
+    policy_definition_reference {
+      policy_definition_id = module.network-interface-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.public-ip-address-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.network-security-group-policy.id
+    }   
+
+    policy_definition_reference {
+      policy_definition_id = module.application-security-group-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.local-network-gateway-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.virtual-network-gateway-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.vpn-connection-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.express-route-circuit-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.application-gateway-policy.id
+    }    
+
+    policy_definition_reference {
+      policy_definition_id = module.route-table-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.user-defined-route-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.traffic-manager-profile-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.front-door-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.cdn-profile-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.cdn-endpoint-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.waf-policy.id
+    }
+
+    # Compute and Web
+
+    policy_definition_reference {
+      policy_definition_id = module.virtual-machine-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.virtual-machine-scale-set-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.availability-set-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.app-service-plan-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.web-app-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.notification-hub-policy.id
+    }    
+
+    policy_definition_reference {
+      policy_definition_id = module.notification-hub-namespace-policy.id
+    }
+
+    # Databases
+
+    policy_definition_reference {
+      policy_definition_id = module.postgres-single-server-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.mysql-single-server-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.sql-db-server-policy.id
+    }    
+
+    policy_definition_reference {
+      policy_definition_id = module.cosmos-db-policy.id
+    }
 
     # Storage
+
     policy_definition_reference {
       policy_definition_id = module.storage-account-policy.id 
     }
 
-    # policy_definition_reference {
-    #   policy_definition_id = module.xxxxx.id
-    # }
+    policy_definition_reference {
+      policy_definition_id = module.container-registry-policy.id
+    }
+
+    # AI and Machine Learning
+
+    # Analytics and IoT
+
+    # Developer tools
+
+    # Integration 
+
+    # Management and Governance 
+
+    policy_definition_reference {
+      policy_definition_id = module.key-vault-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.log-analytics-policy.id
+    }
+
+    policy_definition_reference {
+      policy_definition_id = module.app-insights-policy.id
+    }    
+
+    # Migration 
 }
 
 # General
@@ -141,23 +288,23 @@ module "public-ip-address-policy" {
 
 # TODO: Create custom module > lb is internal if pip is missing
 # resources.properties.frontendIPConfigurations.properites.publicIPAddress does not exist
-module "load-balancer-internal-policy" {
-    source = "./policy-module"
+# module "load-balancer-internal-policy" {
+#     source = "./policy-module"
 
-    pattern = "lbi-*"
-    type = "Microsoft.Network/loadBalancers"
-    display_name = "Internal Load Balancers"
-}
+#     pattern = "lbi-*"
+#     type = "Microsoft.Network/loadBalancers"
+#     display_name = "Internal Load Balancers"
+# }
 
 # TODO: Create custom module > lb is external if pip is attached
 # resources.properties.frontendIPConfigurations.properites.publicIPAddress not null
-module "load-balancer-external-policy" {
-    source = "./policy-module"
+# module "load-balancer-external-policy" {
+#     source = "./policy-module"
 
-    pattern = "lbe-*"
-    type = "Microsoft.Network/loadBalancers"
-    display_name = "External Load Balancers"    
-}
+#     pattern = "lbe-*"
+#     type = "Microsoft.Network/loadBalancers"
+#     display_name = "External Load Balancers"    
+# }
 
 module "network-security-group-policy" {
     source = "./policy-module"
@@ -299,28 +446,79 @@ module "availability-set-policy" {
     display_name = "Availability Sets"  
 }
 
-module "container-registry-policy" {
+module "app-service-plan-policy" {
     source = "./policy-module"
 
-    pattern = "cr*"
-    type = "Microsoft.ContainerRegistry/registries"
-    display_name = "Container Registries"  
+    pattern = "plan-*"
+    type = "Microsoft.Web/serverfarms"
+    display_name = "App Service Plans"  
 }
 
-module "xxxx-policy" {
+module "web-app-policy" {
     source = "./policy-module"
 
-    pattern = "xxx*"
-    type = "xxx"
-    display_name = "xxx"  
+    pattern = "app-*"
+    type = "Microsoft.Web/sites"
+    display_name = "Web apps"  
 }
 
-module "xxxx-policy" {
+# TODO: Create custom module and test for kind=functionapp
+# module "function-app-policy" {
+#     source = "./policy-module"
+
+#     pattern = "func-*"
+#     type = "Microsoft.Web/sites"
+#     display_name = "xxx"  
+# }
+
+module "notification-hub-policy" {
     source = "./policy-module"
 
-    pattern = "xxx*"
-    type = "xxx"
-    display_name = "xxx"  
+    pattern = "ntf-*"
+    type = "Microsoft.NotificationHubs/namespaces/notificationHubs"
+    display_name = "Notification Hubs"  
+}
+
+module "notification-hub-namespace-policy" {
+    source = "./policy-module"
+
+    pattern = "ntfns-*"
+    type = "Microsoft.NotificationHubs/namespaces"
+    display_name = "Notification Hubs namespaces"  
+}
+
+# Databases
+
+module "postgres-single-server-policy" {
+    source = "./policy-module"
+
+    pattern = "psql-*"
+    type = "Microsoft.DBforPostgreSQL/servers"
+    display_name = "PostgreSQL Single Servers"  
+}
+
+module "mysql-single-server-policy" {
+    source = "./policy-module"
+
+    pattern = "mysql-*"
+    type = "Microsoft.DBforMySQL/servers"
+    display_name = "MySQL Single Servers"  
+}
+
+module "sql-db-server-policy" {
+    source = "./policy-module"
+
+    pattern = "sql-*"
+    type = "Microsoft.Sql/servers"
+    display_name = "Azure SQL Database Servers"  
+}
+
+module "cosmos-db-policy" {
+    source = "./policy-module"
+
+    pattern = "cosmos-*"
+    type = "Microsoft.DocumentDB/databaseAccounts"
+    display_name = "Azure Cosmos DB Accounts"  
 }
 
 # Storage
@@ -332,3 +530,47 @@ module "storage-account-policy" {
     type = "Microsoft.Storage/storageAccounts"
     display_name = "Storage Accounts"
 }
+
+module "container-registry-policy" {
+    source = "./policy-module"
+
+    pattern = "acr*"
+    type = "Microsoft.ContainerRegistry/registries"
+    display_name = "Azure Container Registries"  
+}
+
+# AI and Machine Learning 
+
+# Analytics and IoT 
+
+# Developer tools
+
+# Integration 
+
+# Management and governance 
+
+module "key-vault-policy" {
+    source = "./policy-module"
+
+    pattern = "kv-*"
+    type = "Microsoft.KeyVault/vaults"
+    display_name = "Key Vaults"  
+}
+
+module "log-analytics-policy" {
+    source = "./policy-module"
+
+    pattern = "log-*"
+    type = "Microsoft.OperationalInsights/workspaces"
+    display_name = "Log Analytic Workspaces"  
+}
+
+module "app-insights-policy" {
+    source = "./policy-module"
+
+    pattern = "appi-*"
+    type = "Microsoft.Insights/components"
+    display_name = "App Insights"  
+}
+
+# Migration 

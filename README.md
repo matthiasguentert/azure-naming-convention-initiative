@@ -71,115 +71,116 @@ Asset type | Abbreviation | Status | Comment
 | VM storage account | `stvm` |🟨|wont implement|
 | Azure Arc enabled server | `arcs-` |🟨|wont implement|
 | Azure Arc enabled Kubernetes cluster | `arck` |🟨|wont implement|
-| Container registry | `cr` |✅||
-| Container instance | `ci-` |
-| AKS cluster | `aks-` |
-| Service Fabric cluster | `sf-` |
-| App Service environment | `ase-` |
-| App Service plan | `plan-` |
-| Web app | `app-` |
-| Static web app | `stapp` |
-| Function app | `func-` |
+| Container registry | `cr` |🟨|not implemented yet|
+| Container instance | `ci-` |🟨|not implemented yet|
+| AKS cluster | `aks-` |🟨|not implemented yet|
+| Service Fabric cluster | `sf-` |🟨|not implemented yet|
+| App Service environment | `ase-` |🟨|not implemented yet|
+| App Service plan | `plan-` |✅||
+| Web app | `app-` |✅||
+| Static web app | `stapp` |🟨|not implemented yet|
+| Function app | `func-` |🟨|not implemented yet|
 | Cloud service | `cld-` |🟨|wont implement|
-| Notification Hubs | `ntf-` |
-| Notification Hubs namespace | `ntfns-` |
+| Notification Hubs | `ntf-` |✅||
+| Notification Hubs namespace | `ntfns-` |✅||
 
 ## Databases 
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Azure SQL Database server | `sql-` |
-| Azure SQL database | `sqldb-` |
-| Azure Cosmos DB database | `cosmos-` |
-| Azure Cache for Redis instance | `redis-` |
-| MySQL database | `mysql-` |
-| PostgreSQL database | `psql-` |
-| Azure SQL Data Warehouse | `sqldw-` |
-| Azure Synapse Analytics | `syn-` |
-| SQL Server Stretch Database | `sqlstrdb-` |
-| SQL Managed Instance | `sqlmi-` |
+| Azure SQL Database server | `sql-` |✅||
+| Azure SQL database | `sqldb-` |🟨|not implemented yet|
+| Azure Cosmos DB database | `cosmos-` |✅||
+| Azure Cache for Redis instance | `redis-` |🟨|not implemented yet|
+| MySQL database | `mysql-` |✅|Checks single server name|
+| PostgreSQL database | `psql-` |✅|Checks single server name|
+| Azure SQL Data Warehouse | `sqldw-` |🟨|not implemented yet|
+| Azure Synapse Analytics | `syn-` |🟨|not implemented yet|
+| SQL Server Stretch Database | `sqlstrdb-` |🟨|not implemented yet|
+| SQL Managed Instance | `sqlmi-` |🟨|not implemented yet|
 
 ## Storage 
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
 | Storage account | `st` |✅||
-| Azure StorSimple | `ssimp` |
-| Azure Container Registry | `acr` |
+| Azure StorSimple | `ssimp` |🟨|not implemented yet|
+| Azure Container Registry | `acr` |✅||
 
 ## AI and Machine Learning
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Azure Cognitive Search | `srch-` |
-| Azure Cognitive Services | `cog-` |
-| Azure Machine Learning workspace | `mlw-` |
+| Azure Cognitive Search | `srch-` |🟨|not implemented yet|
+| Azure Cognitive Services | `cog-` |🟨|not implemented yet|
+| Azure Machine Learning workspace | `mlw-` |🟨|not implemented yet|
 
 ## Analytics and IoT
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Azure Analysis Services server | `as` |
-| Azure Databricks workspace | `dbw-` |
-| Azure Stream Analytics | `asa-` |
-| Azure Data Explorer cluster | `dec` |
-| Azure Data Factory | `adf-` |
-| Data Lake Store account | `dls` |
-| Data Lake Analytics account | `dla` |
-| Event Hubs namespace | `evhns-` |
-| Event hub | `evh-` |
-| Event Grid domain | `evgd-` |
-| Event Grid topic | `evgt-` |
-| HDInsight - Hadoop cluster | `hadoop-` |
-| HDInsight - HBase cluster | `hbase-` |
-| HDInsight - Kafka cluster | `kafka-` |
-| HDInsight - Spark cluster | `spark-` |
-| HDInsight - Storm cluster | `storm-` |
-| HDInsight - ML Services cluster | `mls-` |
-| IoT hub | `iot-` |
-| Power BI Embedded | `pbi-` |
-| Time Series Insights environment | `tsi-` |
+| Azure Analysis Services server | `as` |🟨|not implemented yet|
+| Azure Databricks workspace | `dbw-` |🟨|not implemented yet|
+| Azure Stream Analytics | `asa-` |🟨|not implemented yet|
+| Azure Data Explorer cluster | `dec` |🟨|not implemented yet|
+| Azure Data Factory | `adf-` |🟨|not implemented yet|
+| Data Lake Store account | `dls` |🟨|not implemented yet|
+| Data Lake Analytics account | `dla` |🟨|not implemented yet|
+| Event Hubs namespace | `evhns-` |🟨|not implemented yet|
+| Event hub | `evh-` |🟨|not implemented yet|
+| Event Grid domain | `evgd-` |🟨|not implemented yet|
+| Event Grid topic | `evgt-` |🟨|not implemented yet|
+| HDInsight - Hadoop cluster | `hadoop-` |🟨|not implemented yet|
+| HDInsight - HBase cluster | `hbase-` |🟨|not implemented yet|
+| HDInsight - Kafka cluster | `kafka-` |🟨|not implemented yet|
+| HDInsight - Spark cluster | `spark-` |🟨|not implemented yet|
+| HDInsight - Storm cluster | `storm-` |🟨|not implemented yet|
+| HDInsight - ML Services cluster | `mls-` |🟨|not implemented yet|
+| IoT hub | `iot-` |🟨|not implemented yet|
+| Power BI Embedded | `pbi-` |🟨|not implemented yet|
+| Time Series Insights environment | `tsi-` |🟨|not implemented yet|
 
 ## Developer tools
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| App Configuration store | `appcs-` |
-| Azure Static Web Apps | `stap-` |
+| App Configuration store | `appcs-` |🟨|not implemented yet|
+| Azure Static Web Apps | `stap-` |🟨|not implemented yet|
 
 ## Integration
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Integration account | `ia-` |
-| Logic apps | `logic-` |
-| Service Bus | `sb-` |
-| Service Bus queue | `sbq-` |
-| Service Bus topic | `sbt-` |
+| Integration account | `ia-` |🟨|not implemented yet|
+| Logic apps | `logic-` |🟨|not implemented yet|
+| Service Bus | `sb-` |🟨|not implemented yet|
+| Service Bus queue | `sbq-` |🟨|not implemented yet|
+| Service Bus topic | `sbt-` |🟨|not implemented yet|
 
 ## Management and governance
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Automation account | `aa-` |
-| Azure Monitor action group | `ag-` |
-| Azure Purview instance | `pview-` |
-| Blueprint | `bp-` |
-| Blueprint assignment | `bpa-` |
-| Key vault | `kv-` |
-| Log Analytics workspace | `log-` |
-| Application Insights | `appi-` |
+| Automation account | `aa-` |🟨|not implemented yet|
+| Azure Monitor action group | `ag-` |🟨|not implemented yet|
+| Azure Purview instance | `pview-` |🟨|not implemented yet|
+| Blueprint | `bp-` |🟨|not implemented yet|
+| Blueprint assignment | `bpa-` |🟨|not implemented yet|
+| Key vault | `kv-` |✅||
+| Log Analytics workspace | `log-` |✅||
+| Application Insights | `appi-` |✅||
 
 ## Migration
 
 Asset type | Abbreviation | Status | Comment 
 |--|--|--|--|
-| Azure Migrate project | `migr-` |
-| Database Migration Service instance | `dms-` |
-| Recovery Services vault | `rsv-` |
+| Azure Migrate project | `migr-` |🟨|not implemented yet|
+| Database Migration Service instance | `dms-` |🟨|not implemented yet|
+| Recovery Services vault | `rsv-` |🟨|not implemented yet|
 
 # Ideas for the future
 
+- Create native ARM template version and integrate with Github actions
 - Create a bicep version 
 - Create a .NET version using Azure SDK 
 
