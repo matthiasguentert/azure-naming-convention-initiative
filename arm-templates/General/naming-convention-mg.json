@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "pattern": {
+            "type": "string",
+            "defaultValue": "mg-*",
+            "metadata": {
+                "description": "Pattern to validate against"
+            }
+        },
+        "policyName": {
+            "type": "string", 
+            "defaultValue": "policy-naming-convention-mg",
+            "metadata": {
+              "displayName": "Policy Name",
+              "description": "Provide a policy name"
+            }
+        },
+        "assignmentName": {
+            "type": "string", 
+            "defaultValue": "assignment-naming-convention-mg",
+            "metadata": {
+              "displayName": "Assignment Name",
+              "description": "Provide an assignment name"
+            }
+        },
+        "effect": {
+            "type": "string",
+            "defaultValue": "Deny",
+            "allowedValues": [
+                "Audit",
+                "Deny",
+                "Disabled"
+            ],
+            "metadata": {
+                "displayName": "Effect",
+                "description": "The effect determines what happens when the policy rule is evaluated to match"
+            }
+        },
+        "enforcementMode": {
+          "type": "string", 
+          "defaultValue": "Default", 
+          "allowedValues": [
+            "Default", 
+            "DoNotEnforce"
+          ],
+          "metadata": {
+            "displayName": "Enforcement Mode", 
+            "desciption": "When enforcement mode is disabled, the policy effect isn't enforced (i.e. deny policy won't deny resources). Compliance assessment results are still available."
+          }
+        }
+    },
+    "variables": {
+      "policy-api-version": "2020-03-01"
+    },
+    "resources": [
+        {
+            "name": "[parameters('policyName')]",
+            "type": "Microsoft.Authorization/policyDefinitions",
+            "apiVersion": "[variables('policy-api-version')]",
+            "properties": {
+              "policyType": "Custom",
+              "mode": "all",
+              "policyRule": {
+                "if": {
+                  "allOf": [
+                    {
+                      "field": "type",
+                      "equals": "Microsoft.Management/managementGroups"
+                    },
+                    {
+                      "field": "name",
+                      "notLike": "[parameters('pattern')]"
+                    }
+                  ]
+                },
+                "then": {
+                  "effect": "[parameters('effect')]"
+                }
+              }
+            }
+        },
+        {
+          "name": "[parameters('assignmentName')]",
+          "type": "Microsoft.Authorization/policyAssignments",
+          "apiVersion": "[variables('policy-api-version')]",
+          "dependsOn": [
+            "[resourceId('Microsoft.Authorization/policyDefinitions', parameters('policyName'))]"
+          ],
+          "properties": {
+            "policyDefinitionId": "[resourceId('Microsoft.Authorization/policyDefinitions', parameters('policyName'))]",
+            "enforcementMode": "[parameters('enforcementMode')]"
+          }
+        }
+    ]
+}
