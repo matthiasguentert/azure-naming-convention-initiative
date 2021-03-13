@@ -49,18 +49,6 @@
             "displayName": "Enforcement Mode", 
             "desciption": "When enforcement mode is disabled, the policy effect isn't enforced (i.e. deny policy won't deny resources). Compliance assessment results are still available."
           }
-        },
-        "scope": {
-          "type": "string", 
-          "defaultValue": "subscription", 
-          "allowedValues": [
-            "subscription", 
-            "managementGroup"
-          ],
-          "metadata": {
-            "displayName": "Scope where policy should be applied to",
-            "description": "Provide a scope where the policy should be applied to"
-          }
         }
     },
     "variables": {
