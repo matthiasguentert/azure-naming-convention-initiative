@@ -1,6 +1,6 @@
 targetScope = 'subscription'
 
-module rg '../modules/naming-convention-generic.bicep' = {
+module mi '../modules/naming-convention-generic.bicep' = {
   name: 'policy-naming-convention-mi'
   params: {
     pattern: 'mi-*'

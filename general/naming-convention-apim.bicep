@@ -1,11 +1,11 @@
 targetScope = 'subscription'
 
-module rg '../modules/naming-convention-generic.bicep' = {
-  name: 'policy-naming-convention-rg'
+module apim '../modules/naming-convention-generic.bicep' = {
+  name: 'policy-naming-convention-apim'
   params: {
     pattern: 'apim-*'
-    policyName: 'policy-naming-convention-rg'
-    assignmentName: 'assignment-naming-convention-rg'
+    policyName: 'policy-naming-convention-apim'
+    assignmentName: 'assignment-naming-convention-apim'
     type: 'Microsoft.ApiManagement/service'
   }
 }

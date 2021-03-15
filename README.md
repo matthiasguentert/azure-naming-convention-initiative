@@ -20,7 +20,7 @@ However you can modify them according to your needs. The underyling module uses 
 
 ### General 
 
-|Asset type | Abbreviation | Tested | Comment 
+|Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
 | Management group | `mg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-mg.json)|
 | Resource group | `rg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-rg.json)|
@@ -30,17 +30,17 @@ However you can modify them according to your needs. The underyling module uses 
 
 ### Networking 
 
-|Asset type | Abbreviation | Tested | Comment 
+|Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
-| Virtual network | `vnet-` |✅||
-| Subnet | `snet-` |✅||
-| Virtual network peering | `peer-` |✅||
-| Network interface (NIC) | `nic-` |✅||
-| Public IP address | `pip-` |✅||
-| Load balancer (internal) | `lbi-` |🟥|not working yet|
-| Load balancer (external) | `lbe-` |🟥|not working yet|
-| Network security group (NSG) | `nsg-` |✅||
-| Application security group (ASG) | `asg-` |✅||
+| Virtual network | `vnet-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vnet.json)|
+| Subnet | `snet-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-snet.json)|
+| Virtual network peering | `peer-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-peer.json)|
+| Network interface (NIC) | `nic-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nic.json)|
+| Public IP address | `pip-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-pip.json)|
+| Load balancer (internal) | `lbi-` |⚠|not yet implemented|
+| Load balancer (external) | `lbe-` |⚠|not yet implemented|
+| Network security group (NSG) | `nsg-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nsg.json)|
+| Application security group (ASG) | `asg-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-asg.json)|
 | Local network gateway | `lgw-` |✅||
 | Virtual network gateway | `vgw-` |✅||
 | VPN connection | `cn-` |✅||

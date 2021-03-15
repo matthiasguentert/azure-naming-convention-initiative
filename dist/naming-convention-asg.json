@@ -6,7 +6,7 @@
     {
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2019-10-01",
-      "name": "policy-naming-convention-apim",
+      "name": "policy-naming-convention-asg",
       "location": "[deployment().location]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -15,16 +15,16 @@
         "mode": "Incremental",
         "parameters": {
           "pattern": {
-            "value": "apim-*"
+            "value": "asg-*"
           },
           "policyName": {
-            "value": "policy-naming-convention-apim"
+            "value": "policy-naming-convention-asg"
           },
           "assignmentName": {
-            "value": "assignment-naming-convention-apim"
+            "value": "assignment-naming-convention-asg"
           },
           "type": {
-            "value": "Microsoft.ApiManagement/service"
+            "value": "Microsoft.Network/applicationSecurityGroups"
           }
         },
         "template": {
@@ -116,7 +116,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.1.62928",
-      "templateHash": "6460739481788101597"
+      "templateHash": "12125994406866537521"
     }
   }
 }
