@@ -1,4 +1,4 @@
-# 👮 Azure Naming Convention Initiative 🚨
+# 👮‍♂️ Azure Naming Convention Initiative 🚨
 
 This repository holds a bunch of Terraform modules that creates an initiatve holding Azure polices to audit or enfore a specific naming convention. However it doesn't assign anything. 
 
@@ -6,43 +6,21 @@ The preset follows Microsoft naming convention which was proposed [here](https:/
 
 However you can modify them according to your needs. The underyling module uses a `notLike` condition so you can check for pre- and postfixes, e.g. `app-*` would match `app-some-web-application` whereas `*-app` would match `some-web-application-app`. 
 
-## 🎯 How to use 
-
-* Download terraform binary from [here](https://www.terraform.io/downloads.html)
-* Clone this repository (`git clone https://github.com/matthiasguentert/azure-naming-convention-initiative.git`)
-* Ensure you are logged in (`az login`)
-* Ensure you have selected the correct target subscription (`az account set --subscription 'SUBSCRIPTION NAME'`)
-* Run `terraform init`
-* Run `terraform validate`
-* Run `terraform plan -out=tfplan`
-* Run `terraform apply -parallelism=20 -auto-approve tfplan`
-* Assign initiative according to your needs (e.g. via Azure Portal) 
-
 ## ☝ Important notes
 
 - After assigning an initiative it takes up to 30min until it becomes active!
 - You need to have the `Resource Policy Contributor` role assigned on the target subscription
 - Currently grouping of policies within the initiative is not possible due to a terraform [bug](https://github.com/terraform-providers/terraform-provider-azurerm/issues/10155)
 
-## 💡 Ideas for the future
+## Known limitations 
 
-- Create native ARM template version and integrate with Github actions
-- Create a bicep version 
-- Create a .NET version using Azure SDK 
-
-## 🤓 Further reading 
-
-- [Azure Policy as Code workflow](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-as-code)
-- [azurerm_policy_definition](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition)
-- [azurerm_policy_set_definition](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_set_definition#policy_definition_group)
-- [Resource providers for Azure services](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers)
-- [Azure Templates](https://docs.microsoft.com/en-us/azure/templates/)
+- Bicep currenlty only supports a [single scope](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md)
 
 ## 🚀 Currently implemented resources
 
 ### General 
 
-|Asset type | Abbreviation | Status | Comment 
+|Asset type | Abbreviation | Tested | Comment 
 |--|--|--|--|
 | Management group | `mg-` |✅||
 | Resource group | `rg-` |✅||
@@ -52,7 +30,7 @@ However you can modify them according to your needs. The underyling module uses 
 
 ### Networking 
 
-|Asset type | Abbreviation | Status | Comment 
+|Asset type | Abbreviation | Tested | Comment 
 |--|--|--|--|
 | Virtual network | `vnet-` |✅||
 | Subnet | `snet-` |✅||
@@ -194,3 +172,11 @@ Asset type | Abbreviation | Status | Comment
 | Azure Migrate project | `migr-` |🟨|not implemented yet|
 | Database Migration Service instance | `dms-` |🟨|not implemented yet|
 | Recovery Services vault | `rsv-` |🟨|not implemented yet|
+
+## 🤓 Further reading 
+
+- [Azure Policy as Code workflow](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-as-code)
+- [azurerm_policy_definition](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_definition)
+- [azurerm_policy_set_definition](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/policy_set_definition#policy_definition_group)
+- [Resource providers for Azure services](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers)
+- [Azure Templates](https://docs.microsoft.com/en-us/azure/templates/)

@@ -1,0 +1,15 @@
+if (-not (Get-Command "bicep.exe" -ErrorAction SilentlyContinue))
+{ 
+    Write-Error "bicep.exe missing or not in path"
+
+    return; 
+}
+
+New-Item -ItemType Directory -Name 'dist' -Path ./ -Force | Out-Null
+
+foreach ($template in Get-ChildItem -Recurse -Path . -Filter *.bicep -Exclude '*generic.bicep')
+{
+    $name = $template.Name
+    Write-Host -ForegroundColor Green "# Transpiling ${name}"
+    bicep.exe build $template --outdir ./dist
+}

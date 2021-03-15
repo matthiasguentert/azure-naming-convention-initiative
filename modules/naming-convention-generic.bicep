@@ -1,5 +1,8 @@
 targetScope = 'subscription'
-param pattern string = 'rg-*'
+param pattern string
+param policyName string
+param assignmentName string
+param type string
 
 @allowed([
   'Deny'
@@ -16,8 +19,8 @@ param effect string = 'Deny'
 @description('When enforcement mode is disabled, the policy effect isn\'t enforced (i.e. deny policy won\'t deny resources). Compliance assessment results are still available.')
 param enforcementMode string = 'Default'
 
-resource policyNamingConventionRg 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
-  name: 'policy-naming-convention-rg'
+resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
+  name: policyName
   properties: {
     policyType: 'Custom'
     mode: 'All'
@@ -26,7 +29,7 @@ resource policyNamingConventionRg 'Microsoft.Authorization/policyDefinitions@202
         allOf: [
           {
             field: 'type'
-            equals: 'Microsoft.Resources/subscriptions/resourceGroups'
+            equals: type
           }
           {
             field: 'name'
@@ -41,10 +44,10 @@ resource policyNamingConventionRg 'Microsoft.Authorization/policyDefinitions@202
   }
 }
 
-resource assignmentNamingConventionRg 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
-  name: 'assignment-naming-convention-rg'
+resource genericAssignment 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
+  name: assignmentName
   properties: {
-    policyDefinitionId: policyNamingConventionRg.id
+    policyDefinitionId: genericPolicy.id
     enforcementMode: enforcementMode
   }
 }
