@@ -24,27 +24,27 @@ However you can modify them according to your needs. The underyling module uses 
 |--|--|--|--|
 | Management group | `mg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-mg.json)|
 | Resource group | `rg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-rg.json)|
-| Policy definition | `policy-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-policy.json)|
-| API management service instance | `apim-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-apim.json)|
-| Managed Identity | `id-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-id.json)|
+| Policy definition | `policy-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-policy.json)|
+| API management service instance | `apim-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-apim.json)|
+| Managed Identity | `id-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-id.json)|
 
 ### Networking 
 
 |Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
-| Virtual network | `vnet-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vnet.json)|
-| Subnet | `snet-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-snet.json)|
-| Virtual network peering | `peer-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-peer.json)|
-| Network interface (NIC) | `nic-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nic.json)|
-| Public IP address | `pip-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-pip.json)|
-| Load balancer (internal) | `lbi-` |⚠|not yet implemented|
-| Load balancer (external) | `lbe-` |⚠|not yet implemented|
-| Network security group (NSG) | `nsg-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nsg.json)|
-| Application security group (ASG) | `asg-` |🔴|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-asg.json)|
-| Local network gateway | `lgw-` |✅||
-| Virtual network gateway | `vgw-` |✅||
-| VPN connection | `cn-` |✅||
-| ExpressRoute circuit | `erc-` |✅||
+| Virtual network | `vnet-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vnet.json)|
+| Subnet | `snet-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-snet.json)|
+| Virtual network peering | `peer-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-peer.json)|
+| Network interface (NIC) | `nic-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nic.json)|
+| Public IP address | `pip-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-pip.json)|
+| Load balancer (internal) | `lbi-` |🔴|not yet implemented|
+| Load balancer (external) | `lbe-` |🔴|not yet implemented|
+| Network security group (NSG) | `nsg-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nsg.json)|
+| Application security group (ASG) | `asg-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-asg.json)|
+| Local network gateway | `lgw-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-lgw.json)|
+| Virtual network gateway | `vgw-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-lgw.json)|
+| VPN connection | `cn-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-cn.json)|
+| ExpressRoute circuit | `erc-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-erc.json)|
 | Application gateway | `agw-` |✅||
 | Route table | `route-` |✅||
 | User defined route (UDR) | `udr-` |✅||
