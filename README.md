@@ -22,7 +22,7 @@ However you can modify them according to your needs. The underyling module uses 
 
 |Asset type | Abbreviation | Tested | Comment 
 |--|--|--|--|
-| Management group | `mg-` |✅||
+| Management group | `mg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-mg.json)|
 | Resource group | `rg-` |✅||
 | Policy definition | `policy-` |✅||
 | API management service instance | `apim-` |✅||
