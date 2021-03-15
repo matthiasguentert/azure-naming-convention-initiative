@@ -6,7 +6,7 @@
     {
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2019-10-01",
-      "name": "policy-naming-convention-mg",
+      "name": "policy-naming-convention-policy",
       "location": "[deployment().location]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -15,16 +15,16 @@
         "mode": "Incremental",
         "parameters": {
           "pattern": {
-            "value": "mg-*"
+            "value": "policy-*"
           },
           "policyName": {
-            "value": "policy-naming-convention-mg"
+            "value": "policy-naming-convention-policy"
           },
           "assignmentName": {
-            "value": "assignment-naming-convention-mg"
+            "value": "assignment-naming-convention-policy"
           },
           "type": {
-            "value": "Microsoft.Management/managementGroups"
+            "value": "Microsoft.Authorization/policyDefinitions"
           }
         },
         "template": {
@@ -116,7 +116,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.1.62928",
-      "templateHash": "14868891920071640192"
+      "templateHash": "6804624967924342567"
     }
   }
 }
