@@ -21,13 +21,11 @@ This polices are ready to use. You don't have to rebuild them. However, in case 
 
 ## 🚀 Currently implemented resources
 
-✅: Tested 
-⚠: Not tested yet, feedback welcome!
-🔴: Not yet implemented, PR welcome!
+✅ Tested ⚠ Not tested yet, feedback welcome! 🔴 Not yet implemented, PR welcome!
 
 ### General 
 
-|Asset type | Abbreviation | Tested | Deploy 
+|Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Management group | `mg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-mg.json)|
 | Resource group | `rg-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-rg.json)|
@@ -37,7 +35,7 @@ This polices are ready to use. You don't have to rebuild them. However, in case 
 
 ### Networking 
 
-|Asset type | Abbreviation | Tested | Deploy 
+|Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Virtual network | `vnet-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vnet.json)|
 | Subnet | `snet-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-snet.json)|
@@ -63,7 +61,7 @@ This polices are ready to use. You don't have to rebuild them. However, in case 
 
 ### Compute and Web 
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Virtual machine | `vm` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vm.json)|
 | Virtual machine scale set | `vmss-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vmss.json)|
@@ -88,7 +86,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Databases 
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Azure SQL Database server | `sql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-sql.json)|
 | Azure SQL database | `sqldb-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-sqldb.json)|
@@ -103,7 +101,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Storage 
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Storage account | `st` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-st.json)|
 | Azure StorSimple | `ssimp` |🔴||
@@ -111,7 +109,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### AI and Machine Learning
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Azure Cognitive Search | `srch-` |🔴||
 | Azure Cognitive Services | `cog-` |🔴||
@@ -119,7 +117,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Analytics and IoT
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Azure Analysis Services server | `as` |🔴||
 | Azure Databricks workspace | `dbw-` |🔴||
@@ -144,14 +142,14 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Developer tools
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | App Configuration store | `appcs-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-appcs.json)|
 | Azure Static Web Apps | `stap-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-stap.json)|
 
 ### Integration
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Integration account | `ia-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-ia.json)|
 | Logic apps | `logic-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-logic.json)|
@@ -161,7 +159,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Management and governance
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Automation account | `aa-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-aa.json)|
 | Azure Monitor action group | `ag-` |🔴||
@@ -174,7 +172,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 ### Migration
 
-Asset type | Abbreviation | Tested | Deploy 
+Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
 | Azure Migrate project | `migr-` |🔴||
 | Database Migration Service instance | `dms-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-dms.json)|
