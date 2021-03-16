@@ -181,6 +181,5 @@ Asset type | Abbreviation | Status | Deploy
 ## 🤓 Further reading 
 
 - [Azure Policy as Code workflow](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-as-code)
-policy_set_definition#policy_definition_group)
 - [Resource providers for Azure services](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers)
 - [Azure Templates](https://docs.microsoft.com/en-us/azure/templates/)
