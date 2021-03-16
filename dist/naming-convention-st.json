@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "functions": [],
+  "resources": [
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2019-10-01",
+      "name": "policy-naming-convention-st",
+      "location": "[deployment().location]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "pattern": {
+            "value": "st*"
+          },
+          "policyName": {
+            "value": "policy-naming-convention-st"
+          },
+          "assignmentName": {
+            "value": "assignment-naming-convention-st"
+          },
+          "type": {
+            "value": "Microsoft.Storage/storageAccounts"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "pattern": {
+              "type": "string"
+            },
+            "policyName": {
+              "type": "string"
+            },
+            "assignmentName": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "effect": {
+              "type": "string",
+              "defaultValue": "Deny",
+              "metadata": {
+                "description": "The effect determines what happens when the policy rule is evaluated to match"
+              },
+              "allowedValues": [
+                "Deny",
+                "Audit",
+                "Disabled"
+              ]
+            },
+            "enforcementMode": {
+              "type": "string",
+              "defaultValue": "Default",
+              "metadata": {
+                "description": "When enforcement mode is disabled, the policy effect isn't enforced (i.e. deny policy won't deny resources). Compliance assessment results are still available."
+              },
+              "allowedValues": [
+                "Default",
+                "DoNotEnforce"
+              ]
+            }
+          },
+          "functions": [],
+          "resources": [
+            {
+              "type": "Microsoft.Authorization/policyDefinitions",
+              "apiVersion": "2020-03-01",
+              "name": "[parameters('policyName')]",
+              "properties": {
+                "policyType": "Custom",
+                "mode": "All",
+                "policyRule": {
+                  "if": {
+                    "allOf": [
+                      {
+                        "field": "type",
+                        "equals": "[parameters('type')]"
+                      },
+                      {
+                        "field": "name",
+                        "notLike": "[parameters('pattern')]"
+                      }
+                    ]
+                  },
+                  "then": {
+                    "effect": "[parameters('effect')]"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Authorization/policyAssignments",
+              "apiVersion": "2020-03-01",
+              "name": "[parameters('assignmentName')]",
+              "properties": {
+                "policyDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', parameters('policyName'))]",
+                "enforcementMode": "[parameters('enforcementMode')]"
+              },
+              "dependsOn": [
+                "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', parameters('policyName'))]"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.3.1.62928",
+      "templateHash": "12663878635535135691"
+    }
+  }
+}
