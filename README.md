@@ -44,8 +44,8 @@ This polices are ready to use. You don't have to rebuild them. However, in case 
 | Virtual network peering | `peer-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-peer.json)|
 | Network interface (NIC) | `nic-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nic.json)|
 | Public IP address | `pip-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-pip.json)|
-| Load balancer (internal) | `lbi-` |🔴|not yet implemented|
-| Load balancer (external) | `lbe-` |🔴|not yet implemented|
+| Load balancer (internal) | `lbi-` |🔴||
+| Load balancer (external) | `lbe-` |🔴||
 | Network security group (NSG) | `nsg-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-nsg.json)|
 | Application security group (ASG) | `asg-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-asg.json)|
 | Local network gateway | `lgw-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-lgw.json)|
@@ -68,21 +68,21 @@ Asset type | Abbreviation | Tested | Deploy
 | Virtual machine | `vm` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vm.json)|
 | Virtual machine scale set | `vmss-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-vmss.json)|
 | Availability set | `avail-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-avail.json)|
-| Managed disk (OS) | `osdisk` |🔴|not yet implemented|
-| Managed disk (data) | `disk` |🔴|not yet implemented|
-| VM storage account | `stvm` |🔴|not yet implemented|
-| Azure Arc enabled server | `arcs-` |🔴|not yet implemented|
-| Azure Arc enabled Kubernetes cluster | `arck` |🔴|not yet implemented|
-| Container registry | `cr` |⚠|not yet implemented|
-| Container instance | `ci-` |⚠|not yet implemented|
+| Managed disk (OS) | `osdisk` |🔴||
+| Managed disk (data) | `disk` |🔴||
+| VM storage account | `stvm` |🔴||
+| Azure Arc enabled server | `arcs-` |🔴||
+| Azure Arc enabled Kubernetes cluster | `arck` |🔴||
+| Container registry | `cr` |🔴||
+| Container instance | `ci-` |🔴||
 | AKS cluster | `aks-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-aks.json)|
-| Service Fabric cluster | `sf-` |⚠|not yet implemented|
-| App Service environment | `ase-` |⚠|not yet implemented|
+| Service Fabric cluster | `sf-` |🔴||
+| App Service environment | `ase-` |🔴||
 | App Service plan | `plan-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-plan.json)|
 | Web app | `app-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-app.json)|
-| Static web app | `stapp` |⚠|not yet implemented|
-| Function app | `func-` |⚠|not yet implemented|
-| Cloud service | `cld-` |⚠|not yet implemented|
+| Static web app | `stapp` |🔴||
+| Function app | `func-` |🔴||
+| Cloud service | `cld-` |🔴||
 | Notification Hubs | `ntf-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-ntf.json)|
 | Notification Hubs namespace | `ntfns-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-ntfns.json)|
 
@@ -96,9 +96,9 @@ Asset type | Abbreviation | Tested | Deploy
 | Azure Cache for Redis instance | `redis-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-redis.json)|
 | MySQL database | `mysql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-mysql.json)|
 | PostgreSQL database | `psql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-psql.json)|
-| Azure SQL Data Warehouse | `sqldw-` |⚠|not yet implemented|
-| Azure Synapse Analytics | `syn-` |⚠|not yet implemented|
-| SQL Server Stretch Database | `sqlstrdb-` |⚠|not yet implemented|
+| Azure SQL Data Warehouse | `sqldw-` |🔴||
+| Azure Synapse Analytics | `syn-` |🔴||
+| SQL Server Stretch Database | `sqlstrdb-` |🔴||
 | SQL Managed Instance | `sqlmi-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-sqlmi.json)|
 
 ### Storage 
@@ -106,41 +106,41 @@ Asset type | Abbreviation | Tested | Deploy
 Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
 | Storage account | `st` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-st.json)|
-| Azure StorSimple | `ssimp` |⚠|not yet implemented|
+| Azure StorSimple | `ssimp` |🔴||
 | Azure Container Registry | `acr` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-acr.json)|
 
 ### AI and Machine Learning
 
 Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
-| Azure Cognitive Search | `srch-` |⚠|not yet implemented|
-| Azure Cognitive Services | `cog-` |⚠|not yet implemented|
-| Azure Machine Learning workspace | `mlw-` |⚠|not yet implemented|
+| Azure Cognitive Search | `srch-` |🔴||
+| Azure Cognitive Services | `cog-` |🔴||
+| Azure Machine Learning workspace | `mlw-` |🔴||
 
 ### Analytics and IoT
 
 Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
-| Azure Analysis Services server | `as` |⚠|not yet implemented|
-| Azure Databricks workspace | `dbw-` |⚠|not yet implemented|
-| Azure Stream Analytics | `asa-` |⚠|not yet implemented|
-| Azure Data Explorer cluster | `dec` |⚠|not yet implemented|
-| Azure Data Factory | `adf-` |⚠|not yet implemented|
-| Data Lake Store account | `dls` |⚠|not yet implemented|
-| Data Lake Analytics account | `dla` |⚠|not yet implemented|
+| Azure Analysis Services server | `as` |🔴||
+| Azure Databricks workspace | `dbw-` |🔴||
+| Azure Stream Analytics | `asa-` |🔴||
+| Azure Data Explorer cluster | `dec` |🔴||
+| Azure Data Factory | `adf-` |🔴||
+| Data Lake Store account | `dls` |🔴||
+| Data Lake Analytics account | `dla` |🔴||
 | Event Hubs namespace | `evhns-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-evhns.json)|
 | Event hub | `evh-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-evh.json)|
 | Event Grid domain | `evgd-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-evgd.json)|
 | Event Grid topic | `evgt-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-evgt.json)|
-| HDInsight - Hadoop cluster | `hadoop-` |⚠|not yet implemented|
-| HDInsight - HBase cluster | `hbase-` |⚠|not yet implemented|
-| HDInsight - Kafka cluster | `kafka-` |⚠|not yet implemented|
-| HDInsight - Spark cluster | `spark-` |⚠|not yet implemented|
-| HDInsight - Storm cluster | `storm-` |⚠|not yet implemented|
-| HDInsight - ML Services cluster | `mls-` |⚠|not yet implemented|
-| IoT hub | `iot-` |⚠|not yet implemented|
-| Power BI Embedded | `pbi-` |⚠|not yet implemented|
-| Time Series Insights environment | `tsi-` |⚠|not yet implemented|
+| HDInsight - Hadoop cluster | `hadoop-` |🔴||
+| HDInsight - HBase cluster | `hbase-` |🔴||
+| HDInsight - Kafka cluster | `kafka-` |🔴||
+| HDInsight - Spark cluster | `spark-` |🔴||
+| HDInsight - Storm cluster | `storm-` |🔴||
+| HDInsight - ML Services cluster | `mls-` |🔴||
+| IoT hub | `iot-` |🔴||
+| Power BI Embedded | `pbi-` |🔴||
+| Time Series Insights environment | `tsi-` |🔴||
 
 ### Developer tools
 
@@ -164,10 +164,10 @@ Asset type | Abbreviation | Tested | Deploy
 Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
 | Automation account | `aa-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-aa.json)|
-| Azure Monitor action group | `ag-` |⚠|not yet implemented|
-| Azure Purview instance | `pview-` |⚠|not yet implemented|
-| Blueprint | `bp-` |⚠|not yet implemented|
-| Blueprint assignment | `bpa-` |⚠|not yet implemented|
+| Azure Monitor action group | `ag-` |🔴||
+| Azure Purview instance | `pview-` |🔴||
+| Blueprint | `bp-` |🔴||
+| Blueprint assignment | `bpa-` |🔴||
 | Key vault | `kv-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-kv.json)|
 | Log Analytics workspace | `log-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-log.json)|
 | Application Insights | `appi-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-appi.json)|
@@ -176,7 +176,7 @@ Asset type | Abbreviation | Tested | Deploy
 
 Asset type | Abbreviation | Tested | Deploy 
 |--|--|--|--|
-| Azure Migrate project | `migr-` |⚠|not yet implemented|
+| Azure Migrate project | `migr-` |🔴||
 | Database Migration Service instance | `dms-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-dms.json)|
 | Recovery Services vault | `rsv-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmg_arm_templates%2Fdist%2Fnaming-convention-rsv.json)|
 
