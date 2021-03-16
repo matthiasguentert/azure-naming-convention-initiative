@@ -24,7 +24,7 @@
             "value": "assignment-naming-convention-rg"
           },
           "type": {
-            "value": "Microsoft.Resources/subscriptions/resourceGroups"
+            "value": "Microsoft.Resources/resourceGroups"
           }
         },
         "template": {
@@ -116,7 +116,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.1.62928",
-      "templateHash": "8428906057753457604"
+      "templateHash": "16660579481892785007"
     }
   }
 }

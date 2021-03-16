@@ -6,7 +6,7 @@
     {
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2019-10-01",
-      "name": "policy-naming-convention-peer",
+      "name": "policy-naming-convention-vm",
       "location": "[deployment().location]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -15,16 +15,16 @@
         "mode": "Incremental",
         "parameters": {
           "pattern": {
-            "value": "peer-*"
+            "value": "vm"
           },
           "policyName": {
-            "value": "policy-naming-convention-peer"
+            "value": "policy-naming-convention-vm"
           },
           "assignmentName": {
-            "value": "assignment-naming-convention-peer"
+            "value": "assignment-naming-convention-vm"
           },
           "type": {
-            "value": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+            "value": "Microsoft.Compute/virtualMachines"
           }
         },
         "template": {
@@ -116,7 +116,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.1.62928",
-      "templateHash": "11564566558094329165"
+      "templateHash": "18310435973902732123"
     }
   }
 }
