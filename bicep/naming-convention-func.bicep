@@ -20,7 +20,7 @@ param effect string = 'Deny'
 param enforcementMode string = 'Default'
 
 resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = {
-  name: 'policy-naming-convention-app'
+  name: 'policy-naming-convention-func'
   properties: {
     policyType: 'Custom'
     mode: 'All'
@@ -33,11 +33,11 @@ resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = 
           }
           {
             field: 'kind'
-            exists: false
+            startsWith: 'functionapp'
           }
           {
             field: 'name'
-            notLike: 'app-*'
+            notLike: 'func-*'
           }
         ]
       }
@@ -49,7 +49,7 @@ resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = 
 }
 
 resource genericAssignment 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
-  name: 'assignment-naming-convention-app'
+  name: 'assignment-naming-convention-func'
   properties: {
     policyDefinitionId: genericPolicy.id
     enforcementMode: enforcementMode

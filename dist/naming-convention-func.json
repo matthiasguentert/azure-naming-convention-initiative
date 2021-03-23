@@ -43,7 +43,7 @@
     {
       "type": "Microsoft.Authorization/policyDefinitions",
       "apiVersion": "2020-03-01",
-      "name": "policy-naming-convention-app",
+      "name": "policy-naming-convention-func",
       "properties": {
         "policyType": "Custom",
         "mode": "All",
@@ -56,11 +56,11 @@
               },
               {
                 "field": "kind",
-                "exists": false
+                "startsWith": "functionapp"
               },
               {
                 "field": "name",
-                "notLike": "app-*"
+                "notLike": "func-*"
               }
             ]
           },
@@ -73,13 +73,13 @@
     {
       "type": "Microsoft.Authorization/policyAssignments",
       "apiVersion": "2020-03-01",
-      "name": "assignment-naming-convention-app",
+      "name": "assignment-naming-convention-func",
       "properties": {
-        "policyDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-app')]",
+        "policyDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-func')]",
         "enforcementMode": "[parameters('enforcementMode')]"
       },
       "dependsOn": [
-        "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-app')]"
+        "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-func')]"
       ]
     }
   ],
@@ -87,7 +87,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.126.58533",
-      "templateHash": "14132211511152142890"
+      "templateHash": "8223296085991000786"
     }
   }
 }
