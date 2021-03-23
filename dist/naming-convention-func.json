@@ -31,6 +31,9 @@
     }
   },
   "functions": [],
+  "variables": {
+    "version": "0.1.0"
+  },
   "resources": [
     {
       "type": "Microsoft.Authorization/policyDefinitions",
@@ -39,6 +42,9 @@
       "properties": {
         "policyType": "Custom",
         "mode": "All",
+        "metadata": {
+          "version": "[variables('version')]"
+        },
         "policyRule": {
           "if": {
             "allOf": [
@@ -79,7 +85,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.126.58533",
-      "templateHash": "16764175203838597901"
+      "templateHash": "18323549007797240546"
     }
   }
 }
