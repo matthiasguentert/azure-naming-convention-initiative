@@ -2,18 +2,6 @@
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "pattern": {
-      "type": "string"
-    },
-    "policyName": {
-      "type": "string"
-    },
-    "assignmentName": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
     "effect": {
       "type": "string",
       "defaultValue": "Deny",
@@ -87,7 +75,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.126.58533",
-      "templateHash": "8223296085991000786"
+      "templateHash": "8982320607364995416"
     }
   }
 }

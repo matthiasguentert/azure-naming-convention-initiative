@@ -1,8 +1,4 @@
 targetScope = 'subscription'
-param pattern string
-param policyName string
-param assignmentName string
-param type string
 
 @allowed([
   'Deny'
