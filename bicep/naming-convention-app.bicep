@@ -1,4 +1,5 @@
 targetScope = 'subscription'
+param pattern string = 'app-*'
 
 @allowed([
   'Deny'
@@ -33,7 +34,7 @@ resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = 
           }
           {
             field: 'name'
-            notLike: 'app-*'
+            notLike: pattern
           }
         ]
       }

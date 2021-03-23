@@ -1,4 +1,5 @@
 targetScope = 'subscription'
+param pattern string = 'func-*'
 
 @allowed([
   'Deny'
@@ -29,11 +30,11 @@ resource genericPolicy 'Microsoft.Authorization/policyDefinitions@2020-03-01' = 
           }
           {
             field: 'kind'
-            startsWith: 'functionapp'
+            like: 'functionapp*'
           }
           {
             field: 'name'
-            notLike: 'func-*'
+            notLike: pattern
           }
         ]
       }
