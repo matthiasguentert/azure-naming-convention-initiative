@@ -2,6 +2,10 @@
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "pattern": {
+      "type": "string",
+      "defaultValue": "app-*"
+    },
     "effect": {
       "type": "string",
       "defaultValue": "Deny",
@@ -48,7 +52,7 @@
               },
               {
                 "field": "name",
-                "notLike": "app-*"
+                "notLike": "[parameters('pattern')]"
               }
             ]
           },
@@ -75,7 +79,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.126.58533",
-      "templateHash": "8727050323777338145"
+      "templateHash": "16464772550086128408"
     }
   }
 }
