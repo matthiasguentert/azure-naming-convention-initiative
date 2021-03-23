@@ -1,4 +1,4 @@
-targetScope = 'subscription'
+targetScope = 'managementGroup'
 param pattern string
 param policyName string
 param assignmentName string

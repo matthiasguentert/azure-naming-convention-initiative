@@ -1,7 +1,8 @@
-targetScope = 'subscription'
+targetScope = 'managementGroup'
 
 module st '../modules/naming-convention-generic.bicep' = {
   name: 'policy-naming-convention-st'
+  scope: managementGroup()
   params: {
     pattern: 'st*'
     policyName: 'policy-naming-convention-st'
