@@ -90,10 +90,10 @@ Asset type | Abbreviation | Status | Deploy
 |--|--|--|--|
 | Azure SQL Database server | `sql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-sql.json)|
 | Azure SQL database | `sqldb-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-sqldb.json)|
-| Azure Cosmos DB database | `cosmos-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-cosmos.json)|
+| Azure Cosmos DB database | `cosmos-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-cosmos.json)|
 | Azure Cache for Redis instance | `redis-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-redis.json)|
 | MySQL database | `mysql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-mysql.json)|
-| PostgreSQL database | `psql-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-psql.json)|
+| PostgreSQL database | `psql-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-psql.json)|
 | Azure SQL Data Warehouse | `sqldw-` |🔴||
 | Azure Synapse Analytics | `syn-` |🔴||
 | SQL Server Stretch Database | `sqlstrdb-` |🔴||
