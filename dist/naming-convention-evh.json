@@ -24,7 +24,7 @@
             "value": "assignment-naming-convention-evh"
           },
           "type": {
-            "value": "Microsoft.EventHub/clusters"
+            "value": "Microsoft.EventHub/namespaces/eventhubs"
           }
         },
         "template": {
@@ -115,8 +115,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.3.1.62928",
-      "templateHash": "4294574903632797236"
+      "version": "0.3.126.58533",
+      "templateHash": "12783482618271367460"
     }
   }
 }

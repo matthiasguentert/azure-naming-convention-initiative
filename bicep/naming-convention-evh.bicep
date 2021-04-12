@@ -6,6 +6,6 @@ module evh '../modules/naming-convention-generic.bicep' = {
     pattern: 'evh-*'
     policyName: 'policy-naming-convention-evh'
     assignmentName: 'assignment-naming-convention-evh'
-    type: 'Microsoft.EventHub/clusters'
+    type: 'Microsoft.EventHub/namespaces/eventhubs'
   }
 }

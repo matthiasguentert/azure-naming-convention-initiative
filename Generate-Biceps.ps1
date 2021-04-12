@@ -82,7 +82,7 @@ $ps = @(
     #@('dls','dls-*',''),
     #@('dla','dla*',''),
     @('evhns','evhns-*','Microsoft.EventHub/namespaces'),
-    @('evh','evh-*','Microsoft.EventHub/clusters'),
+    @('evh','evh-*','Microsoft.EventHub/namespaces/eventhubs'),
     @('evgd','evgd-*','Microsoft.EventGrid/domains'),
     @('evgt','evgt-*','Microsoft.EventGrid/topics'),
     #@('hadoop','hadoop-*',''),
