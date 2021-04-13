@@ -15,7 +15,7 @@
         "mode": "Incremental",
         "parameters": {
           "pattern": {
-            "value": "vm"
+            "value": "vm*"
           },
           "policyName": {
             "value": "policy-naming-convention-vm"
@@ -115,8 +115,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.3.1.62928",
-      "templateHash": "18310435973902732123"
+      "version": "0.3.126.58533",
+      "templateHash": "4953926087698851212"
     }
   }
 }

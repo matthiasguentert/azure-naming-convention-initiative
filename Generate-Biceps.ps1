@@ -30,7 +30,7 @@ $ps = @(
     @('waf','waf-*','Microsoft.Network/ApplicationGatewayWebApplicationFirewallPolicies'),
 
     ### Compute and Web
-    @('vm','vm','Microsoft.Compute/virtualMachines'),
+    @('vm','vm*','Microsoft.Compute/virtualMachines'),
     @('vmss','vmss-*','Microsoft.Compute/virtualMachineScaleSets'),
     @('avail','avail-*','Microsoft.Compute/availabilitySets'),
     #@('osdisk','osdisk-*',''),
