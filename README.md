@@ -2,7 +2,7 @@
 
 This repository holds a bunch of bicep templates that creates and assigns Azure polices to audit or enforce a specific naming convention. 
 
-The preset follows Microsoft naming convention which was proposed [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations)
+The preset follows Microsoft naming convention which was proposed [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) and adds some that where missing (e.g. private endpoints).
 
 However you can modify them according to your needs. The underyling module uses a `notLike` condition so you can check for pre- and postfixes, e.g. `app-*` would match `app-some-web-application` whereas `*-app` would match `some-web-application-app`. 
 
@@ -37,6 +37,7 @@ This polices are ready to use. You don't have to rebuild them. However, in case 
 
 |Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
+| Private endpoint | `pe-` |🔴||
 | Virtual network | `vnet-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-vnet.json)|
 | Subnet | `snet-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-snet.json)|
 | Virtual network peering | `peer-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-peer.json)|
