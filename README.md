@@ -6,6 +6,10 @@ The preset follows Microsoft naming convention which was proposed [here](https:/
 
 However you can modify them according to your needs. The underyling module uses a `notLike` condition so you can check for pre- and postfixes, e.g. `app-*` would match `app-some-web-application` whereas `*-app` would match `some-web-application-app`. 
 
+## 🏗 Todo
+
+- Update templates, so that pattern takes an array of strings, instead of a single string
+
 ## 👉 Important notes
 
 - After assigning an initiative/policy it takes up to 30min until it becomes active!
