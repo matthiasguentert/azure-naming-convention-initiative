@@ -133,8 +133,8 @@ Asset type | Abbreviation | Status | Deploy
 | Data Lake Analytics account | `dla` |🔴||
 | Event Hubs namespace | `evhns-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evhns.json)|
 | Event hub | `evh-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evh.json)|
-| Event Grid domain | `evgd-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evgd.json)|
-| Event Grid topic | `evgt-` |⚠|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evgt.json)|
+| Event Grid domain | `evgd-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evgd.json)|
+| Event Grid topic | `evgt-` |✅|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-evgt.json)|
 | HDInsight - Hadoop cluster | `hadoop-` |🔴||
 | HDInsight - HBase cluster | `hbase-` |🔴||
 | HDInsight - Kafka cluster | `kafka-` |🔴||
