@@ -10,12 +10,13 @@ However you can modify them according to your needs. The underyling module uses 
 
 - Update templates, so that pattern takes an array of strings, instead of a single string
 
-## 👉 Important notes
+## 👉 Important notes & limitations
 
-- After assigning an initiative/policy it takes up to 30min until it becomes active!
+- After assigning an initiative/policy it can take up to 30min until it becomes active, so be patient!
 - You need to have the `Resource Policy Contributor` role assigned on the target subscription.
 - Bicep currenlty only supports a [single scope](https://github.com/Azure/bicep/blob/main/docs/spec/resource-scopes.md) why I decided to stick with `subscription` scope for the moment.
 - I didn't bundle them inside an initiative on purpose, so the user can freely decided on what to policy to use.
+- When deploying a policy assignment via template, we currently can't set a `non-compliant message`. This seems to be a limitation of ARM.
 
 This polices are ready to use. You don't have to rebuild them. However, in case you would like to apply your own naming schema follow this steps
 
