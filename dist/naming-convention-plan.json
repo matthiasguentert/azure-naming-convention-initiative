@@ -27,11 +27,16 @@
     }
   },
   "functions": [],
+  "variables": {
+    "policyName": "policy-naming-convention-plan",
+    "assignmentName": "assignment-naming-convention-plan",
+    "type": "Microsoft.Web/serverfarms"
+  },
   "resources": [
     {
       "type": "Microsoft.Authorization/policyDefinitions",
       "apiVersion": "2020-03-01",
-      "name": "policy-naming-convention-plan",
+      "name": "[variables('policyName')]",
       "properties": {
         "policyType": "Custom",
         "mode": "All",
@@ -40,7 +45,7 @@
             "allOf": [
               {
                 "field": "type",
-                "equals": "Microsoft.Web/serverfarms"
+                "equals": "[variables('type')]"
               },
               {
                 "allOf": [
@@ -65,13 +70,13 @@
     {
       "type": "Microsoft.Authorization/policyAssignments",
       "apiVersion": "2020-03-01",
-      "name": "assignment-naming-convention-plan",
+      "name": "[variables('assignmentName')]",
       "properties": {
-        "policyDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-plan')]",
+        "policyDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', variables('policyName'))]",
         "enforcementMode": "[parameters('enforcementMode')]"
       },
       "dependsOn": [
-        "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', 'policy-naming-convention-plan')]"
+        "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', variables('policyName'))]"
       ]
     }
   ],
@@ -79,7 +84,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.3.1.62928",
-      "templateHash": "6562831825047563319"
+      "templateHash": "4943640268419423142"
     }
   }
 }
