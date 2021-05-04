@@ -157,7 +157,7 @@ Asset type | Abbreviation | Status | Deploy
 
 Asset type | Abbreviation | Status | Deploy 
 |--|--|--|--|
-| Integration account | `ia-` |🟡|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-ia.json)|
+| Integration account | `ia-` |🟢|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-ia.json)|
 | Logic apps | `logic-` |🟢|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-logic.json)|
 | Service Bus | `sb-` |🟢|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-sb.json)|
 | Service Bus queue | `sbq-` |🟢|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmatthiasguentert%2Fazure-naming-convention-initiative%2Fmain%2Fdist%2Fnaming-convention-sbq.json)|
