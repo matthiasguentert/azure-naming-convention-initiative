@@ -1,5 +1,6 @@
-Asset type | Abbreviation | Comment
+Asset type | Resource Type | Abbreviation | 
 |--|--|--|
-|Event Grid Subscriptions | `evgs-`   ||
-|Key vault secret         | `secret-` ||
-|Container registry webhook     | `wh-`     ||
+|Event Grid Subscriptions |`Microsoft.EventGrid/eventSubscriptions`| `evgs-`   |
+|Key vault secret         |`Microsoft.KeyVault/vaults/secrets`| `secret-` |
+|Container registry webhook     |`Microsoft.ContainerRegistry/registries/webhooks`| `wh-`     |
+|Spring Cloud|`Microsoft.AppPlatform/Spring`|`spring-`|
