@@ -2,7 +2,7 @@
 
 This repository holds a bunch of bicep templates that creates and assigns Azure polices to audit or enforce a specific naming convention. 
 
-The preset follows Microsoft naming convention which was proposed [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) and adds some that where missing (e.g. private endpoints).
+The preset follows Microsoft naming convention which was proposed [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) and adds some that where missing (e.g. private endpoints). For resource types where Microsoft doesn't make any suggestions I have created my own proposals, which can be found [here](https://github.com/matthiasguentert/azure-naming-convention-initiative/blob/main/PROPOSAL.md).
 
 However you can modify them according to your needs. The underyling module uses a `notLike` condition so you can check for pre- and postfixes, e.g. `app-*` would match `app-some-web-application` whereas `*-app` would match `some-web-application-app`. 
 
