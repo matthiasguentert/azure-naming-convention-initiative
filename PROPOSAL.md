@@ -5,3 +5,4 @@ Asset type | Resource Type | Abbreviation |
 |Container registry webhook     |`Microsoft.ContainerRegistry/registries/webhooks`| `wh-`     |
 |Spring Cloud|`Microsoft.AppPlatform/Spring`|`spring-`|
 |Batch Account|`Microsoft.Batch/batchAccounts`|`ba`|
+|Subscriptions|`Microsoft.Subscription/subscriptionDefinitions`|`FOOSUBSCRIPTION PROD`|
