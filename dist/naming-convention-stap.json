@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.613.9944",
-      "templateHash": "5592379025594685919"
+      "templateHash": "11412622988503928847"
     }
   },
   "functions": [],
@@ -13,7 +13,7 @@
     {
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2019-10-01",
-      "name": "policy-naming-convention-apim",
+      "name": "policy-naming-convention-stap",
       "location": "[deployment().location]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -22,16 +22,16 @@
         "mode": "Incremental",
         "parameters": {
           "pattern": {
-            "value": "apim-*"
+            "value": "stap-*"
           },
           "policyName": {
-            "value": "policy-naming-convention-apim"
+            "value": "policy-naming-convention-stap"
           },
           "assignmentName": {
-            "value": "assignment-naming-convention-apim"
+            "value": "assignment-naming-convention-stap"
           },
           "type": {
-            "value": "Microsoft.ApiManagement/service"
+            "value": "Microsoft.Web/staticSites"
           }
         },
         "template": {
