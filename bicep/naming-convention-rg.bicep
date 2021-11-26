@@ -6,6 +6,6 @@ module rg '../modules/naming-convention-generic.bicep' = {
     pattern: 'rg-*'
     policyName: 'policy-naming-convention-rg'
     assignmentName: 'assignment-naming-convention-rg'
-    type: 'Microsoft.Resources/resourceGroups'
+    type: 'Microsoft.Resources/subscriptions/resourceGroups'
   }
 }

@@ -1,6 +1,13 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.4.613.9944",
+      "templateHash": "11113194934510874403"
+    }
+  },
   "functions": [],
   "resources": [
     {
@@ -24,12 +31,19 @@
             "value": "assignment-naming-convention-rg"
           },
           "type": {
-            "value": "Microsoft.Resources/resourceGroups"
+            "value": "Microsoft.Resources/subscriptions/resourceGroups"
           }
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
           "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_generator": {
+              "name": "bicep",
+              "version": "0.4.613.9944",
+              "templateHash": "1962347804019361325"
+            }
+          },
           "parameters": {
             "pattern": {
               "type": "string"
@@ -111,12 +125,5 @@
         }
       }
     }
-  ],
-  "metadata": {
-    "_generator": {
-      "name": "bicep",
-      "version": "0.3.1.62928",
-      "templateHash": "16660579481892785007"
-    }
-  }
+  ]
 }

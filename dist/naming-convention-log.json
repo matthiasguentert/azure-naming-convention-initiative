@@ -1,6 +1,13 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.4.613.9944",
+      "templateHash": "16592326996023739709"
+    }
+  },
   "parameters": {
     "effect": {
       "type": "string",
@@ -79,12 +86,5 @@
         "[subscriptionResourceId('Microsoft.Authorization/policyDefinitions', variables('policyName'))]"
       ]
     }
-  ],
-  "metadata": {
-    "_generator": {
-      "name": "bicep",
-      "version": "0.3.1.62928",
-      "templateHash": "5787499302193795859"
-    }
-  }
+  ]
 }

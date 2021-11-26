@@ -1,7 +1,7 @@
 $ps = @(
     ### General
     @('mg','mg-*','Microsoft.Management/managementGroups'),
-    @('rg','rg-*','Microsoft.Resources/resourceGroups'),
+    @('rg','rg-*','Microsoft.Resources/subscriptions/resourceGroups'),
     @('policy','policy-*','Microsoft.Authorization/policyDefinitions'),
     @('apim','apim-*','Microsoft.ApiManagement/service'),
     @('id','id-*','Microsoft.ManagedIdentity/userAssignedIdentities'),
@@ -43,13 +43,15 @@ $ps = @(
     @('aks','aks-*','Microsoft.ContainerService/managedClusters'),
     #@('sf','sf-*',''),
     #@('ase','ase-*',''),
-    @('plan','plan-*','Microsoft.Web/serverfarms'),
-    @('app','app-*','Microsoft.Web/sites'),
     #@('stapp','stapp',''),
     #@('func','func-*','Microsoft.Web/sites'), kind: "functionapp"
     #@('cld','cld-*',''),
     @('ntf','ntf-*','Microsoft.NotificationHubs/namespaces/notificationHubs'),
     @('ntfns','ntfs-*','Microsoft.NotificationHubs/namespaces'),
+
+    # One-of templates not based on module
+    #@('plan','plan-*','Microsoft.Web/serverfarms'),    
+    #@('app','app-*','Microsoft.Web/sites'), 
 
     ### Databases 
     @('sql','sql-*','Microsoft.Sql/servers'),
@@ -113,7 +115,10 @@ $ps = @(
     #@('bp','bp-*',''),
     #@('bpa','bpa-*',''),
     @('kv','kv-*','Microsoft.KeyVault/vaults'),
-    @('log','log-*','Microsoft.OperationalInsights/workspaces'),
+    
+    # One-off template not based on module
+    #@('log','log-*','Microsoft.OperationalInsights/workspaces'),
+
     @('appi','appi-*','Microsoft.Insights/components'),
 
     ### Migration
