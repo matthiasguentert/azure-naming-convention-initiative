@@ -6,4 +6,4 @@ Asset type | Resource Type | Abbreviation |
 |Spring Cloud|`Microsoft.AppPlatform/Spring`|`spring-`|
 |Batch Account|`Microsoft.Batch/batchAccounts`|`ba`|
 |Subscriptions|`Microsoft.Subscription/subscriptionDefinitions`|`FOOSUBSCRIPTION PROD`|
-|Private Link Scope|`microsoft.insights/privateLinkScopes`|`pls-`|
+|Azure Monitor Private Link Scope|`microsoft.insights/privateLinkScopes`|`mpls-`|
