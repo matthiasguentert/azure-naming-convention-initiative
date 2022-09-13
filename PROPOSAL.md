@@ -7,3 +7,4 @@ Asset type | Resource Type | Abbreviation |
 |Batch Account|`Microsoft.Batch/batchAccounts`|`ba`|
 |Subscriptions|`Microsoft.Subscription/subscriptionDefinitions`|`FOOSUBSCRIPTION PROD`|
 |Azure Monitor Private Link Scope|`microsoft.insights/privateLinkScopes`|`mpls-`|
+|Azure Databricks|`...`|`adb-`|
